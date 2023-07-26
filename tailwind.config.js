@@ -38,6 +38,10 @@ module.exports = {
         white: "hsl(0, 0%, 100%)",
         customLightGrey: "hsl(210, 17%, 95%)",
       },
+      backgroundImage: {
+        bgpatternsmallcircle: "/shared/desktop/bg-pattern-small-circle.svg",
+        bgpatternleaf: "/shared/desktop/bg-pattern-leaf.svg",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

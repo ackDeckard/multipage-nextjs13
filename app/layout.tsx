@@ -4,7 +4,10 @@ import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import Image from "next/image";
 
-const jost = Jost({ subsets: ["latin"] });
+const jost = Jost({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Frontend Mentor - Guru Challenge",
