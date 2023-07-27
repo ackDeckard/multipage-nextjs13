@@ -45,8 +45,8 @@ export default function NavBar() {
 
       {/* MOBILE MENU */}
       {openMenu ? (
-        <div className="absolute  top-[104px] w-full">
-          <ul className=" grid  gap-8 bg-customBlack px-6 py-12 text-2xl uppercase text-white transition-all md:hidden">
+        <div className="absolute  top-[104px] z-50 w-full">
+          <ul className="   grid gap-8 bg-customBlack px-6 py-12 text-2xl uppercase text-white transition-all md:hidden">
             <li className="duration-500">Our company</li>
             <li className="duration-500">Locations</li>
             <li className="duration-500">Contact</li>

@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="grid h-[843px] w-full  place-items-center overflow-hidden bg-customPeach bg-bgpatternsmallcircle text-center text-white md:max-w-[689px] md:rounded-[15px] lg:h-[640px] lg:w-[1111px] lg:max-w-none lg:grid-flow-col lg:grid-cols-[2fr_max-content]  lg:text-left">
+    <section className="mb-[120px] grid h-[843px]  w-full place-items-center overflow-hidden bg-customPeach bg-bgpatternsmallcircle text-center text-white md:max-w-[689px] md:rounded-[15px] lg:h-[640px] lg:w-[1111px] lg:max-w-none lg:grid-flow-col  lg:grid-cols-[2fr_max-content] lg:text-left">
       <div className="relative px-6 md:px-[58px] lg:px-0 lg:pl-[95px]">
         <h2 className=" lg:font pb-[14px] pt-20 text-center text-[32px] font-medium leading-9 md:text-[48px]  md:leading-[48px] lg:pt-0 lg:text-left">
           Award-winning custom designs and digital branding solutions
