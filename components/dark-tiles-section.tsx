@@ -18,18 +18,18 @@ const images = [
 
 export default function DarkTilesSection() {
   return (
-    <section className="grid w-full place-items-center px-6">
+    <section className="grid w-full place-items-center px-6 lg:grid lg:w-[1111px] lg:grid-cols-2 lg:gap-[30px] lg:px-0">
       {images.map((item) => (
         <article
           key={item.backgroundImage}
-          className={`relative mb-6  h-[250px] w-full gap-3 rounded-[15px] `}
+          className={`relative mb-6  h-[250px] w-full gap-3 rounded-[15px] first:col-start-1 first:row-span-2  hover:cursor-pointer  lg:mb-0 first:lg:h-full`}
           style={{
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundImage: `url(${item.backgroundImage})`,
           }}
         >
-          <div className="grid h-full w-full place-items-center gap-3 rounded-[15px] bg-black/60">
+          <div className="grid h-full w-full place-items-center gap-3 rounded-[15px] bg-black/60 hover:bg-customHoverColor/70">
             <h2 className="self-end text-[28px] font-medium uppercase leading-9 tracking-[1.4px] text-white">
               {item.title}
             </h2>
