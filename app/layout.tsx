@@ -2,7 +2,7 @@ import NavBar from "@/components/navigation-bar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
-import Image from "next/image";
+import FooterSection from "@/components/footer-section";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -24,6 +24,7 @@ export default function RootLayout({
       <body className={jost.className}>
         <NavBar />
         {children}
+        <FooterSection />
       </body>
     </html>
   );

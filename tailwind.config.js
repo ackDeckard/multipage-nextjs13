@@ -38,6 +38,8 @@ module.exports = {
         white: "hsl(0, 0%, 100%)",
         customLightGrey: "hsl(210, 17%, 95%)",
         customHoverColor: "hsl(10, 72%, 66%)",
+        customHoverColorSecond: "hsl(10, 100%, 80%)",
+        customFooterColor: "hsl(264, 4%, 11%)",
       },
       backgroundImage: {
         bgpatternsmallcircle: "/shared/desktop/bg-pattern-small-circle.svg",
