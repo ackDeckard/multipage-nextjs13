@@ -47,9 +47,9 @@ export default function NavBar() {
       {openMenu ? (
         <div className="absolute  top-[104px] z-50 w-full">
           <ul className="   grid gap-8 bg-customBlack px-6 py-12 text-2xl uppercase text-white transition-all md:hidden">
-            <li className="duration-500">Our company</li>
-            <li className="duration-500">Locations</li>
-            <li className="duration-500">Contact</li>
+            <li className="duration-500  ">Our company</li>
+            <li className="duration-500  ">Locations</li>
+            <li className="duration-500  ">Contact</li>
           </ul>
           <div className="h-screen bg-customDarkGrey/30" />
         </div>
@@ -60,9 +60,9 @@ export default function NavBar() {
       {/* TABLET and DESKTOP MENU */}
       <div className="hidden md:inline  ">
         <ul className="grid gap-8 bg-white text-2xl uppercase text-customDarkGrey transition-all md:cursor-pointer md:grid-flow-col md:gap-[42px] md:text-sm md:leading-[14px] md:tracking-[2px]">
-          <li className="duration-500">Our company</li>
-          <li className="duration-500">Locations</li>
-          <li className="duration-500">Contact</li>
+          <li className="duration-500 hover:underline">Our company</li>
+          <li className="duration-500 hover:underline">Locations</li>
+          <li className="duration-500 hover:underline">Contact</li>
         </ul>
       </div>
     </nav>
