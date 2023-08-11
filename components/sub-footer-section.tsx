@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export default function SubFooter() {
   return (
-    <section className="mx-6 grid h-[379px] place-items-center rounded-[15px] bg-customHoverColor text-white md:h-[350px] md:w-full md:max-w-[689px] lg:h-[292px] lg:max-w-[1111px] lg:grid-cols-2  lg:justify-between lg:px-[94px]">
+    <section className="mx-6 grid h-[379px]   place-items-center rounded-[15px] bg-customHoverColor text-white md:h-[350px] md:w-full md:max-w-[689px] lg:h-[292px] lg:max-w-[1111px] lg:grid-cols-2  lg:justify-between lg:px-[94px]">
       <div className="">
         <h4 className=" mx-auto mb-[16px] w-[250px] pt-16 text-center text-[32px] font-medium leading-[36px] lg:mx-0 lg:w-[268px] lg:text-left lg:text-[40px] lg:font-medium">
           Let&apos;s talk about your project

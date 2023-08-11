@@ -40,6 +40,8 @@ module.exports = {
         customHoverColor: "hsl(10, 72%, 66%)",
         customHoverColorSecond: "hsl(10, 100%, 80%)",
         customFooterColor: "hsl(264, 4%, 11%)",
+        customParagraphColor: "hsl(264, 5%, 20%)",
+        customBgImageWithText: "hsl(14, 76%, 97%)",
       },
       backgroundImage: {
         bgpatternsmallcircle: "/shared/desktop/bg-pattern-small-circle.svg",
