@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const socialmedias = [
   {
@@ -24,21 +27,41 @@ const socialmedias = [
 ];
 
 export default function FooterSection() {
+  let pathname = usePathname();
+
   return (
-    <footer className="-z-10 -mt-[190px] h-[815px] w-full bg-customFooterColor md:-mt-[86px] md:h-[423px]">
-      <div className="md:mx-auto md:grid md:max-w-[689px] md:grid-flow-col md:justify-between md:pt-[172px] lg:max-w-[1111px]">
+    <footer
+      className={`${
+        pathname === "/contact"
+          ? "mt-0 h-[626px] md:h-[337px]"
+          : "-mt-[190px] h-[815px] md:h-[423px]"
+      } -z-10   w-full bg-customFooterColor md:-mt-[86px] `}
+    >
+      <div
+        className={` ${
+          pathname === "/contact" ? "md:pt-[80px]" : "md:pt-[172px]"
+        }  md:mx-auto md:grid md:max-w-[689px] md:grid-flow-col md:justify-between  lg:max-w-[1111px]  `}
+      >
         <Image
           src="/shared/desktop/logo-light.png"
           alt="footer logo"
           width={202}
           height={100}
-          className=" mx-auto pt-[254px] md:pt-0"
+          className={` ${
+            pathname === "/contact" ? "pt-16" : "pt-[254px]"
+          } mx-auto  md:pt-0`}
         />
         <div className="mx-6 my-8  h-[1px] bg-white/10 md:hidden" />
         <ul className="mb-10 grid place-items-center gap-8 text-[14px] uppercase leading-[14px] tracking-[2px] text-white md:grid-flow-col ">
-          <li className=" hover:cursor-pointer hover:underline">Our company</li>
-          <li className=" hover:cursor-pointer hover:underline">Locations</li>
-          <li className=" hover:cursor-pointer hover:underline">Contact</li>
+          <li className="duration-500 hover:underline">
+            <Link href="/about">Our company</Link>
+          </li>
+          <li className="duration-500 hover:underline">
+            <Link href="/locations">Locations</Link>
+          </li>
+          <li className="duration-500 hover:underline">
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
       <div className="mx-6 my-8 hidden h-[1px] bg-white/10  md:mx-auto md:block md:max-w-[689px] lg:max-w-[1111px]" />
