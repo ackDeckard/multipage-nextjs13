@@ -1,7 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function DarkTilesSection({ props }) {
+type DarkTile = {
+  title: string;
+  backgroundImage: string;
+  link: string;
+};
+
+type DarkTilesSectionProps = {
+  props: DarkTile[];
+};
+
+const DarkTilesSection: React.FC<DarkTilesSectionProps> = ({ props }) => {
   let sectionClass =
     "mb-6 grid h-[250px] w-full grid-flow-col grid-cols-[1fr_max-content] items-center self-start rounded-[15px] text-[15px] font-medium uppercase tracking-[5px] text-white first:col-start-1 first:row-span-2 hover:cursor-pointer lg:mb-0  ";
 
@@ -56,4 +66,6 @@ export default function DarkTilesSection({ props }) {
       ))}
     </section>
   );
-}
+};
+
+export default DarkTilesSection;

@@ -1,6 +1,15 @@
 import Image from "next/image";
 
-export default function ImageWithText({ props }) {
+type ImageWithTextProps = {
+  props: {
+    id: number;
+    image: string;
+    title: string;
+    text: string;
+  }[];
+};
+
+const ImageWithText: React.FC<ImageWithTextProps> = ({ props }) => {
   return (
     <section className="grid w-full place-items-center px-6 pt-24 md:max-w-[689px] md:px-0 lg:max-w-[1111px]   lg:grid-cols-3 ">
       {props.map((item) => (
@@ -30,4 +39,6 @@ export default function ImageWithText({ props }) {
       ))}
     </section>
   );
-}
+};
+
+export default ImageWithText;
