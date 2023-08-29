@@ -49,8 +49,8 @@ export function ContactForm() {
     console.log(values);
   }
   return (
-    <section className="relative h-[764px] w-full bg-customHoverColor md:h-[711px] md:max-w-[689px] md:rounded-[15px] lg:h-[480px] lg:max-w-[1111px]">
-      <div className="mx-auto h-[620px] w-[327px] py-[72px] md:w-full md:max-w-[573px] lg:grid lg:max-w-[1111px] lg:grid-flow-col lg:grid-cols-2 lg:gap-[95px] lg:px-[95px]">
+    <section className="relative h-[764px] w-full overflow-hidden bg-customHoverColor md:h-[711px] md:max-w-[689px] md:rounded-[15px] lg:h-[480px] lg:max-w-[1111px]">
+      <div className=" mx-auto h-[620px] w-[327px] py-[72px] md:w-full md:max-w-[573px] lg:grid lg:max-w-[1111px] lg:grid-flow-col lg:grid-cols-2 lg:gap-[95px] lg:px-[95px]">
         <div className="text-center text-white md:text-left ">
           <h4 className="mb-6 text-[32px] font-medium leading-[36px]  md:leading-[48px] lg:pt-[63px] ">
             Contact Us
@@ -130,12 +130,21 @@ export function ContactForm() {
         </Form>
       </div>
 
-      <div className="absolute  top-0 h-[990px] w-[876px] ">
+      <div className="absolute  top-0 h-[990px] w-[876px]  md:hidden">
         <Image
           src="/contact/mobile/bg-pattern-hero-contact-mobile.svg"
           height={0}
           width={0}
           className="absolute left-[-90px] top-0 h-full w-full"
+          alt=""
+        />
+      </div>
+      <div className="absolute  top-0 h-[640px] w-[640px]">
+        <Image
+          src="/contact/desktop/bg-pattern-hero-desktop.svg"
+          height={0}
+          width={0}
+          className="absolute left-[-90px] top-0 hidden h-full w-full  md:inline lg:-top-44 lg:left-[-36px]"
           alt=""
         />
       </div>

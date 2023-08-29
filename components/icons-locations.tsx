@@ -1,21 +1,25 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const data = [
   {
     id: 1,
     title: "Canada",
     image: "/shared/desktop/illustration-canada.svg",
+    link: "",
   },
   {
     id: 2,
     title: "Australia",
     image: "/shared/desktop/illustration-australia.svg",
+    link: "",
   },
   {
     id: 3,
     title: "United Kingdom",
     image: "/shared/desktop/illustration-united-kingdom.svg",
+    link: "",
   },
 ];
 
@@ -48,9 +52,15 @@ export default function IconsLocations() {
             {item.title}
           </h4>
           <div className="grid justify-items-center">
-            <Button size={"regular"} variant={"orange"} className=" uppercase">
-              See Location
-            </Button>
+            <Link href="/locations">
+              <Button
+                size={"regular"}
+                variant={"orange"}
+                className=" uppercase"
+              >
+                See Location
+              </Button>
+            </Link>
           </div>
         </article>
       ))}
